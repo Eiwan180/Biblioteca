@@ -18,14 +18,13 @@
 //  enterarse al compilar, no cuando el usuario ve la pantalla en blanco.
 // =====================================================================
 
-import type {
-  PrestamoResponseDto,
-  CrearPrestamoRequestDto,
-  ErrorResponseDto,
-} from '../contratos/prestamo.dto.js';
+import { CrearPrestamoRequestDto, PrestamoResponseDto, ErrorResponseDto} from "../contrato/prestamo-response.dto.js";
+
+
 
 // ---------------------------------------------------------------------
 //  Referencias al DOM
+
 // ---------------------------------------------------------------------
 const $ = (id: string): HTMLElement => {
   const el = document.getElementById(id);
